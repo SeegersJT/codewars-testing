@@ -1,5 +1,5 @@
 import { expect } from 'chai'; // Importing Chai for assertions
-import addNumbers from '../challenges/example.js'; // Adjust the path as necessary
+import addNumbers from '../challenges/example-descriptive.js'; // Adjust the path as necessary
 
 /**
  * Test suite for the addNumbers function.

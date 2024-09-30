@@ -2,6 +2,12 @@
 
 Welcome to the Codewars Testing Project! This repository provides a structured way to implement and test JavaScript functions, particularly for Codewars challenges. It is designed to help you easily create, test, and validate your solutions.
 
+## Personal Use Only
+
+This project is designed for **personal use only** to make the setup for solving **Codewars challenges** easier and more efficient. It is **not intended for distribution or sharing**.
+
+Please ensure you follow the [**Codewars Code of Conduct**](https://www.codewars.com/community/rules) while using this project. Sharing solutions publicly or distributing others' work violates Codewars' rules. Use this project responsibly and solely for personal practice and improvement.
+
 ## Table of Contents
 
 - [Features](#features)
@@ -148,6 +154,51 @@ To enable automatic linting on save in Visual Studio Code, follow these steps:
 ### Note on ESLint Implementation
 
 - ESLint has been implemented in this project with specific rules to ensure code quality. You can customize these rules in the `eslint.config.js` file located in the root of the project.
+
+## Nodemon Integration for Auto-Running Tests
+
+Nodemon has been implemented in this project to automatically run your tests whenever you make changes to the source or test files.
+
+### How to Use Nodemon for Testing
+
+1. **Running Tests Automatically on File Changes:**
+   To automatically run tests when you save files, use the following command:
+
+   ```bash
+   npm run test:watch
+   ```
+
+   This command will:
+   - Watch for changes in files inside the `src/tests/` directory.
+   - Automatically rerun the tests on any file change (e.g., `.js` or `.jsx` files).
+
+2. **Stopping the Watcher:**
+   To stop the `nodemon` process, simply press `Ctrl + C` in your terminal.
+
+3. **Manual Test Runs:**
+   If you just want to run the tests once without watching for changes, you can use:
+
+   ```bash
+   npm run test
+   ```
+
+### Adding More Files to Watch
+
+If you need to watch additional files or directories, you can modify the `nodemon.json` configuration file in the root of your project. Here's how:
+
+1. **Open the `nodemon.json` file** in your project root.
+   
+2. **Modify the `watch` array** to include any additional paths you want to monitor. For example:
+
+   ```json
+   {
+     "watch": ["src/tests", "src/challenges"], // Add any other paths here
+     "ext": "js",
+     "exec": "npm test"
+   }
+   ```
+
+3. **Save the `nodemon.json` file**, and `nodemon` will now also watch the specified additional files or directories.
 
 ## Contributing
 
