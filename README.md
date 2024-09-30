@@ -17,7 +17,6 @@ Please ensure you follow the [**Codewars Code of Conduct**](https://www.codewars
 - [Example](#example)
 - [Running Tests](#running-tests)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -181,24 +180,6 @@ Nodemon has been implemented in this project to automatically run your tests whe
    ```bash
    npm run test
    ```
-
-### Adding More Files to Watch
-
-If you need to watch additional files or directories, you can modify the `nodemon.json` configuration file in the root of your project. Here's how:
-
-1. **Open the `nodemon.json` file** in your project root.
-   
-2. **Modify the `watch` array** to include any additional paths you want to monitor. For example:
-
-   ```json
-   {
-     "watch": ["src/tests", "src/challenges"], // Add any other paths here
-     "ext": "js",
-     "exec": "npm test"
-   }
-   ```
-
-3. **Save the `nodemon.json` file**, and `nodemon` will now also watch the specified additional files or directories.
 
 ## Contributing
 
