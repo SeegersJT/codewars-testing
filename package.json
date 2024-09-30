@@ -5,12 +5,18 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "mocha --recursive --spec 'src/tests/**/*.test.js'",
     "test:example": "mocha 'src/tests/example.test.js'"
+    
   },
   "devDependencies": {
     "@codewars/test-compat": "^1.0.0",
+    "@eslint/js": "^9.11.1",
     "chai": "^5.1.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
     "mocha": "^10.0.0"
   },
   "author": "SeegersJT"

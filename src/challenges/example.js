@@ -6,7 +6,8 @@
  * @returns {number} The sum of the two numbers.
  */
 function addNumbers(a, b) {
-    return a + b; // Returns the sum of a and b
+  console.log('ads');
+  return a + b; // Returns the sum of a and b
 }
 
 export default addNumbers; // Export the function for use in tests

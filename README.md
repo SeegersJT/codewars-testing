@@ -114,6 +114,41 @@ To run all tests at once, use the following command:
 npm run test
 ```
 
+## ESLint Setup
+
+This project uses [ESLint](https://eslint.org/) for JavaScript code linting. ESLint has been configured to help maintain code quality and enforce consistent coding styles. Here’s how to set it up for automatic linting:
+
+### Automatic Linting on Save
+
+To enable automatic linting on save in Visual Studio Code, follow these steps:
+
+1. **Install ESLint Extension**:
+   - Open Visual Studio Code.
+   - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl + Shift + X`.
+   - Search for "ESLint" and install the official ESLint extension by Dirk Baeumer.
+
+2. **Configure ESLint**:
+   - In your Visual Studio Code settings, add the following configuration to enable auto-fixing on save:
+     - Press `Ctrl + ,` to open the settings.
+     - Search for "settings.json" and click on "Edit in settings.json".
+     - Add the following configuration:
+
+     ```json
+     {
+       "editor.codeActionsOnSave": {
+         "source.fixAll.eslint": true
+       },
+       "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"]
+     }
+     ```
+
+3. **Using ESLint**:
+   - Now, every time you save your JavaScript files, ESLint will automatically lint your code and apply fixes where applicable.
+
+### Note on ESLint Implementation
+
+- ESLint has been implemented in this project with specific rules to ensure code quality. You can customize these rules in the `eslint.config.js` file located in the root of the project.
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and create a pull request with your changes.
