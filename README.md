@@ -15,7 +15,10 @@ Please ensure you follow the [**Codewars Code of Conduct**](https://www.codewars
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Example](#example)
-- [Running Tests](#running-tests)
+- [Running Tests](#Running-Specific-Tests)
+- [Running All Tests](#Running-All-Tests)
+- [ESLINT Setup](#ESLint-Setup)
+- [Nodemon](#Nodemon-Integration-for-Auto-Running-Tests)
 - [Contributing](#contributing)
 
 ## Features
