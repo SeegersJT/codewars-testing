@@ -6,7 +6,7 @@ Welcome to the Codewars Testing Project! This repository provides a structured w
 
 This project is designed for **personal use only** to make the setup for solving **Codewars challenges** easier and more efficient. It is **not intended for distribution or sharing**.
 
-Please ensure you follow the [**Codewars Code of Conduct**](https://www.codewars.com/community/rules) while using this project. Sharing solutions publicly or distributing others' work violates Codewars' rules. Use this project responsibly and solely for personal practice and improvement.
+Please ensure you follow the [**Codewars Code of Conduct**](https://docs.codewars.com/community/code-of-conduct) while using this project. Sharing solutions publicly or distributing others' work violates Codewars' rules. Use this project responsibly and solely for personal practice and improvement.
 
 ## Table of Contents
 
