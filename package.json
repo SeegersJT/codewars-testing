@@ -1,0 +1,17 @@
+{
+  "name": "codewars-testing",
+  "version": "1.0.0",
+  "description": "A project to test Codewars challenges",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --recursive --spec 'src/tests/**/*.test.js'",
+    "test:example": "mocha 'src/tests/example.test.js'"
+  },
+  "devDependencies": {
+    "@codewars/test-compat": "^1.0.0",
+    "chai": "^5.1.1",
+    "mocha": "^10.0.0"
+  },
+  "author": "SeegersJT"
+}
